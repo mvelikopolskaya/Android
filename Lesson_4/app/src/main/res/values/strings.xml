@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">login</string>
+    <string name="phone">phone</string>
+    <string name="gender_option">Gender</string>
+    <string name="female">F</string>
+    <string name="male">M</string>
+    <string name="notifications">Receive notifications</string>
+    <string name="points">Points</string>
+    <string name="points_int">0/100</string>
+    <string name="authorization_agreement">About device authorization</string>
+    <string name="news">About new products and offers</string>
+    <string name="save">SAVE</string>
+    <string name="save_notification_success">Information successfully saved</string>
+</resources>
