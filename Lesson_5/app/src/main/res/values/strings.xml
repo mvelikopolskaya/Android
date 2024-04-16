@@ -1,4 +1,23 @@
 <resources>
-    <string name="app_name">Quiz</string>
-    <string name="continue_btn">Continue</string>
+    <string name="app_name">Квиз</string>
+    <string name="continue_btn">Продолжить</string>
+    <string name="quiz_header">Квиз</string>
+    <string name="back_btn">Назад</string>
+    <string name="send_btn">Отправить</string>
+    <string name="results">Результат</string>
+    <string name="result_count">Ваш счет:</string>
+    <string name="retake">Пройти тест заново</string>
+    
+    <string name="question_1">Какое море не ограничивается сушей?</string>
+    <string name="question_1_option_1">Берингово</string>
+    <string name="question_1_option_2">Саргассово</string>
+    <string name="question_1_option_3">Охотское</string>
+    <string name="question_2">В это озеро впадает множество рек, а вытекает из него только одна — Ангара</string>
+    <string name="question_2_option_1">Виктория</string>
+    <string name="question_2_option_2">Ладожское</string>
+    <string name="question_2_option_3">Байкал</string>
+    <string name="question_3">Государство, которое граничит с Норвегией</string>
+    <string name="question_3_option_1">Швеция</string>
+    <string name="question_3_option_2">Австрия</string>
+    <string name="question_3_option_3">Дания</string>
 </resources>

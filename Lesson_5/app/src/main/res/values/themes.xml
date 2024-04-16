@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- Base application theme. -->
     <style name="Theme.Quiz" parent="Theme.Material3.DayNight">
-    <!-- Primary brand color. -->
-    <item name="colorPrimary">@color/coniferous_500</item>
-    <item name="colorPrimaryVariant">@color/coniferous_700</item>
-    <item name="colorOnPrimary">@color/white</item>
-    <!-- Secondary brand color. -->
-    <item name="colorSecondary">@color/cherry_200</item>
-    <item name="colorSecondaryVariant">@color/cherry_700</item>
-    <item name="colorOnSecondary">?attr/colorPrimary</item>
-    <!-- Status bar color. -->
-    <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/coniferous_500</item>
+        <item name="colorPrimaryVariant">@color/coniferous_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cherry_200</item>
+        <item name="colorSecondaryVariant">@color/cherry_700</item>
+        <item name="colorOnSecondary">@color/coniferous_500</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/coniferous_700</item>
     </style>
 
-    <style name="QuizStyle" parent="Theme.Material3.DayNight">
+    <style name="QuizStyle" parent="Theme.Quiz">
         <item name="fontFamily">@font/open_sans</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="QuizQuestionStyle" parent="QuizStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Quiz" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/coniferous_500</item>
+        <item name="colorPrimaryVariant">@color/coniferous_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cherry_200</item>
+        <item name="colorSecondaryVariant">@color/cherry_700</item>
+        <item name="colorOnSecondary">@color/coniferous_500</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/coniferous_700</item>
     </style>
 </resources>

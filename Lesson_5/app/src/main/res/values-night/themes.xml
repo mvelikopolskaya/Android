@@ -9,8 +9,13 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/orange_500</item>
         <item name="colorSecondaryVariant">@color/orange_500</item>
-        <item name="colorOnSecondary">?attr/colorPrimary</item>
+        <item name="colorOnSecondary">@color/turquoise_700</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/turquoise_500</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Quiz" parent="Theme.Quiz">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
 </resources>

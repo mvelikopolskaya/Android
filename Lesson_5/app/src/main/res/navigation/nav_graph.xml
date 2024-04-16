@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_quiz"
+    app:startDestination="@id/WelcomeFragment">
+
+    <fragment
+        android:id="@+id/WelcomeFragment"
+        android:name="com.example.quiz.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_WelcomeFragment_to_QuizFragment"
+            app:destination="@+id/QuizFragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/QuizFragment"
+        android:name="com.example.quiz.QuizFragment"
+        android:label="QuizFragment"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_QuizFragment_to_ResultFragment"
+            app:destination="@+id/ResultFragment"
+            app:popUpTo="@id/WelcomeFragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="com.example.quiz.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_ResultFragment_to_QuizFragment"
+            app:destination="@id/QuizFragment"
+            app:popUpTo="@id/WelcomeFragment">
+        </action>
+        <action
+            android:id="@+id/action_ResultFragment_to_WelcomeFragment"
+            app:destination="@id/WelcomeFragment"
+            app:popUpTo="@id/WelcomeFragment">
+        </action>
+        <argument
+            android:name="score"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
