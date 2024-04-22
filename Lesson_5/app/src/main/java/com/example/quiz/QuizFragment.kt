@@ -15,7 +15,6 @@ import quiz.databinding.FragmentQuizBinding
 
 
 class QuizFragment : Fragment() {
-    private var param1: String? = null
     private var _binding: FragmentQuizBinding? = null
     private val binding get() = _binding!!
 

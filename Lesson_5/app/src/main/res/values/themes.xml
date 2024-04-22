@@ -20,9 +20,16 @@
         <item name="android:layout_marginTop">10dp</item>
     </style>
 
+    <style name="QuizSmallButtonStyle" parent="QuizStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
     <style name="QuizQuestionStyle" parent="QuizStyle">
         <item name="android:textSize">16sp</item>
     </style>
+
     <!-- Base application theme. -->
     <style name="Base.Theme.Quiz" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -35,6 +42,5 @@
         <item name="colorOnSecondary">@color/coniferous_500</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/coniferous_700</item>
-
     </style>
 </resources>

@@ -1,23 +1,25 @@
 <resources>
-    <string name="app_name">Квиз</string>
-    <string name="continue_btn">Продолжить</string>
-    <string name="quiz_header">Квиз</string>
-    <string name="back_btn">Назад</string>
-    <string name="send_btn">Отправить</string>
-    <string name="results">Результат</string>
-    <string name="result_count">Ваш счет:</string>
-    <string name="retake">Пройти тест заново</string>
-    
-    <string name="question_1">Какое море не ограничивается сушей?</string>
-    <string name="question_1_option_1">Берингово</string>
-    <string name="question_1_option_2">Саргассово</string>
-    <string name="question_1_option_3">Охотское</string>
-    <string name="question_2">В это озеро впадает множество рек, а вытекает из него только одна — Ангара</string>
-    <string name="question_2_option_1">Виктория</string>
-    <string name="question_2_option_2">Ладожское</string>
-    <string name="question_2_option_3">Байкал</string>
-    <string name="question_3">Государство, которое граничит с Норвегией</string>
-    <string name="question_3_option_1">Швеция</string>
-    <string name="question_3_option_2">Австрия</string>
-    <string name="question_3_option_3">Дания</string>
+    <string name="app_name">Quiz</string>
+    <string name="continue_btn">Continue</string>
+    <string name="birthdate_picker_btn">Select your birth date</string>
+    <string name="quiz_header">Quiz</string>
+    <string name="back_btn">Back</string>
+    <string name="send_btn">Send</string>
+    <string name="results">Results</string>
+    <string name="result_count">Your score:</string>
+    <string name="retake">Retake the test</string>
+    <string name="date_picker_title">Select your birth date</string>
+
+    <string name="question_1">Which sea is not limited by land?</string>
+    <string name="question_1_option_1">Bering Sea</string>
+    <string name="question_1_option_2">Sargasso Sea</string>
+    <string name="question_1_option_3">Sea of Okhotsk</string>
+    <string name="question_2">Many rivers flow into this lake, but only one flows out of it - the Angara</string>
+    <string name="question_2_option_1">Lake Victoria</string>
+    <string name="question_2_option_2">Ladoga lake</string>
+    <string name="question_2_option_3">Lake Baikal</string>
+    <string name="question_3">State that borders with Norway</string>
+    <string name="question_3_option_1">Sweden</string>
+    <string name="question_3_option_2">Austria</string>
+    <string name="question_3_option_3">Denmark</string>
 </resources>
