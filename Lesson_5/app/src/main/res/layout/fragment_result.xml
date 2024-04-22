@@ -19,21 +19,32 @@
 
     <TextView
         android:id="@+id/result_count"
+        style="@style/QuizQuestionStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/result_count"
         app:layout_constraintTop_toBottomOf="@+id/result"
-        app:layout_constraintBottom_toBottomOf="@id/retake_btn"
+        app:layout_constraintBottom_toTopOf="@id/retake_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/result_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/result_count"
-        style="@style/QuizQuestionStyle">
-    </TextView>
+        app:lottie_rawRes="@raw/animation_result"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true">
+    </com.airbnb.lottie.LottieAnimationView>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/retake_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/result_count"
+        app:layout_constraintTop_toBottomOf="@id/result_count"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

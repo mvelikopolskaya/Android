@@ -22,7 +22,7 @@
             style="@style/QuizStyle"/>
 
         <TextView
-            android:id="@+id/first_question"
+            android:id="@+id/question_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_1"
@@ -31,27 +31,27 @@
             style="@style/QuizQuestionStyle"/>
 
         <RadioGroup
-            android:id="@+id/first_question_group"
+            android:id="@+id/question_group_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/first_question"
+            app:layout_constraintTop_toBottomOf="@id/question_1"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/QuizQuestionStyle">
 
             <RadioButton
-                android:id="@+id/first_question_option_1"
+                android:id="@+id/question_1_option_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_option_1">
             </RadioButton>
             <RadioButton
-                android:id="@+id/first_question_option_2"
+                android:id="@+id/question_1_option_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_option_2">
             </RadioButton>
             <RadioButton
-                android:id="@+id/first_question_option_3"
+                android:id="@+id/question_1_option_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_option_3">
@@ -59,36 +59,36 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/second_question"
+            android:id="@+id/question_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_2"
-            app:layout_constraintTop_toBottomOf="@id/first_question_group"
+            app:layout_constraintTop_toBottomOf="@id/question_group_1"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/QuizQuestionStyle"/>
 
         <RadioGroup
-            android:id="@+id/second_question_group"
+            android:id="@+id/question_group_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/second_question"
+            app:layout_constraintTop_toBottomOf="@id/question_2"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/QuizQuestionStyle">
 
             <RadioButton
-                android:id="@+id/second_question_option_1"
+                android:id="@+id/question_2_option_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_2_option_1">
             </RadioButton>
             <RadioButton
-                android:id="@+id/second_question_option_2"
+                android:id="@+id/question_2_option_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_2_option_2">
             </RadioButton>
             <RadioButton
-                android:id="@+id/second_question_option_3"
+                android:id="@+id/question_2_option_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_2_option_3">
@@ -96,36 +96,36 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/third_question"
+            android:id="@+id/question_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_3"
-            app:layout_constraintTop_toBottomOf="@id/second_question_group"
+            app:layout_constraintTop_toBottomOf="@id/question_group_2"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/QuizQuestionStyle"/>
 
         <RadioGroup
-            android:id="@+id/third_question_group"
+            android:id="@+id/question_group_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/third_question"
+            app:layout_constraintTop_toBottomOf="@id/question_3"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/QuizQuestionStyle">
 
             <RadioButton
-                android:id="@+id/third_question_option_1"
+                android:id="@+id/question_3_option_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_option_1">
             </RadioButton>
             <RadioButton
-                android:id="@+id/third_question_option_2"
+                android:id="@+id/question_3_option_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_option_2">
             </RadioButton>
             <RadioButton
-                android:id="@+id/third_question_option_3"
+                android:id="@+id/question_3_option_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_option_3">
@@ -136,7 +136,7 @@
             android:id="@+id/back_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/third_question_group"
+            app:layout_constraintTop_toBottomOf="@id/question_group_3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/send_btn"
@@ -149,7 +149,7 @@
             android:id="@+id/send_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/third_question_group"
+            app:layout_constraintTop_toBottomOf="@id/question_group_3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/back_btn"
             app:layout_constraintEnd_toEndOf="parent"

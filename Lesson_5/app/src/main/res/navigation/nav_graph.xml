@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_WelcomeFragment_to_QuizFragment"
-            app:destination="@+id/QuizFragment">
+            app:destination="@+id/QuizFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out">
         </action>
     </fragment>
 
@@ -24,6 +26,15 @@
         <action
             android:id="@+id/action_QuizFragment_to_ResultFragment"
             app:destination="@+id/ResultFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/WelcomeFragment">
+        </action>
+        <action
+            android:id="@+id/action_QuizFragment_to_WelcomeFragment"
+            app:destination="@+id/WelcomeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
             app:popUpTo="@id/WelcomeFragment">
         </action>
     </fragment>
@@ -36,12 +47,18 @@
         <action
             android:id="@+id/action_ResultFragment_to_QuizFragment"
             app:destination="@id/QuizFragment"
-            app:popUpTo="@id/WelcomeFragment">
+            app:popUpTo="@id/WelcomeFragment"
+            app:enterAnim="@android:anim/fade_out"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right">
         </action>
         <action
             android:id="@+id/action_ResultFragment_to_WelcomeFragment"
             app:destination="@id/WelcomeFragment"
-            app:popUpTo="@id/WelcomeFragment">
+            app:popUpTo="@id/WelcomeFragment"
+            app:enterAnim="@android:anim/fade_out"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right">
         </action>
         <argument
             android:name="score"

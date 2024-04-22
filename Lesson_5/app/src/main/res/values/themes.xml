@@ -35,5 +35,6 @@
         <item name="colorOnSecondary">@color/coniferous_500</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/coniferous_700</item>
+
     </style>
 </resources>
