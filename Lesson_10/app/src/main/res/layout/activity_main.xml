@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/countdown_progress_visual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/time_setter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:trackColor="@color/purple_200"
+        app:indicatorColor="@color/purple_500"
+        app:trackThickness="10dp"
+        app:indicatorSize="150dp">
+    </com.google.android.material.progressindicator.CircularProgressIndicator>
+
+    <TextView
+        android:id="@+id/countdown_progress_numeric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countdown_progress_numeric_default"
+        app:layout_constraintBottom_toBottomOf="@id/countdown_progress_visual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/countdown_progress_visual">
+    </TextView>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/time_setter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/countdown_progress_visual"
+        app:layout_constraintBottom_toTopOf="@id/start_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tickColorActive="?attr/colorPrimary"
+        app:trackColorInactive="@color/purple_200"
+        android:stepSize="10.0"
+        android:valueFrom="0.0"
+        android:valueTo="60.0">
+    </com.google.android.material.slider.Slider>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:text="@string/start_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
+        style="@style/ButtonStyle">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/stop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="@string/stop_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        style="@style/ButtonStyle">
+    </com.google.android.material.button.MaterialButton>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:barrierDirection="bottom"
+        app:barrierAllowsGoneWidgets="true"
+        app:barrierMargin="35dp"
+        app:constraint_referenced_ids="time_setter, stop_btn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
