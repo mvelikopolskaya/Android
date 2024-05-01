@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hint_text_edit">Input text here</string>
+    <string name="save_btn">Save</string>
+    <string name="clear_btn">Clear</string>
+    <string name="hint_text_view">Your text will be shown here</string>
+    <string name="data_info">Data is empty</string>
+</resources>
