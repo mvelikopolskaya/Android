@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="search_request">Type your request here</string>
+    <string name="search_result_hint">The result of your request will be displayed here</string>
+    <string name="search_result">Nothing found for</string>
+    <string name="search_btn">Search</string>
+</resources>
