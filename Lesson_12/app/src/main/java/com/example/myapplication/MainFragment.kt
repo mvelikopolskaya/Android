@@ -5,17 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import com.example.myapplication.databinding.FragmentMainBinding
-import kotlinx.coroutines.launch
 
 
 class MainFragment : Fragment() {
-    private val mainViewModel : MainViewModel by viewModels()
+    private val mainViewModel: MainViewModel by viewModels()
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
@@ -32,41 +27,14 @@ class MainFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentMainBinding.inflate(inflater)
+        _binding = FragmentMainBinding.inflate(inflater, container, false)
 
-        val searchBtn = binding.searchBtn
-
-        binding.searchRequest.addTextChangedListener {
-            if(binding.searchRequest.text.toString().length < 3) {
-                searchBtn.isEnabled = false
-            } else {
-                searchBtn.isEnabled = true
-            }
-        }
-
-        searchBtn.setOnClickListener {
-            val searchRequest = binding.searchRequest.text.toString()
-            mainViewModel.onButtonClick(searchRequest, this.requireContext())
-        }
-
-        viewLifecycleOwner.lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.STARTED){
-                mainViewModel.state.collect { state ->
-                    when(state){
-                        State.Loading -> {
-                            binding.searchProgress.isIndeterminate = true
-                            binding.searchProgress.visibility = View.VISIBLE
-                            binding.searchResult.text = null
-                        }
-                        State.Complete -> {
-                            binding.searchProgress.isIndeterminate = false
-                            binding.searchProgress.visibility = View.GONE
-                            binding.searchResult.text = "${resources.getString(R.string.search_result)} ${binding.searchRequest.text.toString()}"
-                        }
-                    }
-                }
-            }
-        }
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.mainViewModel = mainViewModel
+        binding.lifecycleOwner = viewLifecycleOwner
     }
 }
