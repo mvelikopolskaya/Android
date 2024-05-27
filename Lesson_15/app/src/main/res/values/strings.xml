@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="text_input">Type your word here</string>
+    <string name="text_view">Your dictionary will be shown here</string>
+    <string name="add_btn">Add</string>
+    <string name="clear_btn">Clear</string>
+    <string name="notification_success">Your word was successfully added into dictionary</string>
+    <string name="notification_fail">Your word must include only letters and/or dash symbol</string>
+</resources>
