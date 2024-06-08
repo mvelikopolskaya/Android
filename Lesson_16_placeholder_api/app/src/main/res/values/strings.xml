@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="text_view">Your request will be shown here</string>
+    <string name="refresh_btn">Refresh</string>
+</resources>
