@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="rover">Rover:</string>
+    <string name="camera">Camera:</string>
+    <string name="sol">Sol:</string>
+    <string name="earth_date">Earth date:</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/photo_img"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/rover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/photo_img"
+        app:layout_constraintStart_toStartOf="@id/photo_img"
+        android:text="@string/rover"/>
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rover"
+        app:layout_constraintStart_toStartOf="@id/photo_img"
+        android:text="@string/camera"/>
+
+    <TextView
+        android:id="@+id/sol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/photo_img"
+        app:layout_constraintEnd_toEndOf="@id/photo_img"
+        android:text="@string/sol"/>
+
+    <TextView
+        android:id="@+id/earth_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sol"
+        app:layout_constraintEnd_toEndOf="@id/photo_img"
+        android:text="@string/earth_date"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

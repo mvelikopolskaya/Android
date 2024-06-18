@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.myapplication.presentation.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_MainFragment_to_PhotoFragment"
+            app:destination="@+id/PhotoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/PhotoFragment"
+        android:name="com.example.myapplication.presentation.PhotoFragment"
+        android:label="FullscreenPhotoFragment"
+        tools:layout="@layout/fragment_photo">
+        <action
+            android:id="@+id/action_PhotoFragment_to_MainFragment"
+            app:destination="@+id/MainFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/MainFragment">
+        </action>
+    </fragment>
+
+
+</navigation>
